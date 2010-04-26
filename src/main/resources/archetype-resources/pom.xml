@@ -18,12 +18,31 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
       <version>1.2.2</version>
     </dependency>
 
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.6.6</version>
+    </dependency>        
+
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjrt</artifactId>
+        <version>1.6.6</version>
+    </dependency>
+
     <!-- Grails defaults to Ehache for the second-level Hibernate cache. -->
 	<dependency>
 	  <groupId>org.hibernate</groupId>
 	  <artifactId>hibernate-ehcache</artifactId>
 	  <version>3.3.1.GA</version>
 	</dependency>
+
+	<!-- Use javassist as the bytecode manipulation provider for Hibernate -->
+    <dependency>
+        <groupId>javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>3.11.0.GA</version>            
+    </dependency>
 	
 	<dependency>
 	  <groupId>net.sf.ehcache</groupId>
@@ -68,6 +87,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 
   <repositories>
     <!-- Required to get hold of JTA -->
+    <repository>
+        <id>jboss.org</id>
+        <name>jboss.org</name>            
+        <url>http://repository.jboss.com/maven2/</url>
+    </repository>
     <repository>
       <id>maven2-repository.dev.java.net</id>
       <name>Java.net Repository for Maven</name>
