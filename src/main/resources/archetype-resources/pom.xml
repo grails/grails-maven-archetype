@@ -42,11 +42,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 	  <groupId>org.hibernate</groupId>
 	  <artifactId>hibernate-ehcache</artifactId>
 	  <version>3.3.1.GA</version>
-      <!-- see http://www.slf4j.org/faq.html#IllegalAccessError -->
       <exclusions>
+	      <!-- see http://www.slf4j.org/faq.html#IllegalAccessError -->
          <exclusion>
            <groupId>org.slf4j</groupId>
            <artifactId>slf4j-api</artifactId>
+       	 </exclusion>
+	      <!-- we are pulling in ehcache-core below -->
+         <exclusion>
+           <groupId>net.sf.ehcache</groupId>
+           <artifactId>ehcache</artifactId>
        	 </exclusion>
    	   </exclusions>	
 	</dependency>
