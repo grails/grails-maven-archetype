@@ -54,6 +54,7 @@
       <groupId>org.grails</groupId>
       <artifactId>grails-test</artifactId>
       <version>${grails-test.version}</version>
+      <scope>test</scope>
     </dependency>
     
     <dependency>
@@ -67,14 +68,19 @@
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-ehcache</artifactId>
       <version>${hibernate-ehcache.version}</version>
-      
-      <!-- See http://www.slf4j.org/faq.html#IllegalAccessError -->
-      <exclusions>
-        <exclusion>
-          <groupId>org.slf4j</groupId>
-          <artifactId>slf4j-api</artifactId>
-        </exclusion>
-      </exclusions>
+        <exclusions>
+          <!-- See http://www.slf4j.org/faq.html#IllegalAccessError -->
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+          </exclusion>
+          
+          <!-- We are pulling in ehcache-core below -->
+          <exclusion>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+          </exclusion>
+        </exclusions>
     </dependency>
     
     <!-- Use javassist as the bytecode manipulation provider for Hibernate -->
