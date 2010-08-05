@@ -145,13 +145,14 @@
   </dependencies>
   
   <repositories>
-    <!-- Required to get hold of JTA -->
+	  <!-- Required to get hold of javassist:javassist -->
     <repository>
       <id>jboss.org</id>
       <name>jboss.org</name>
       <url>http://repository.jboss.com/maven2/</url>
     </repository>
     
+	  <!-- Required to get hold of JTA -->
     <repository>
       <id>maven2-repository.dev.java.net</id>
       <name>Java.net Repository for Maven</name>
