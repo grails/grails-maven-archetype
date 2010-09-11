@@ -23,7 +23,6 @@
     
     <jstl.version>1.2</jstl.version>
     <hibernate-ehcache.version>3.3.1.GA</hibernate-ehcache.version>
-    <javassist.version>3.11.0.GA</javassist.version>
     <ehcache-core.version>1.7.1</ehcache-core.version>
     <hsqldb.version>1.8.0.10</hsqldb.version>
     <slf4j-log4j12.version>1.5.8</slf4j-log4j12.version>
@@ -82,14 +81,7 @@
           </exclusion>
         </exclusions>
     </dependency>
-    
-    <!-- Use javassist as the bytecode manipulation provider for Hibernate -->
-    <dependency>
-      <groupId>javassist</groupId>
-      <artifactId>javassist</artifactId>
-      <version>${javassist.version}</version>
-    </dependency>
-    
+        
     <dependency>
       <groupId>net.sf.ehcache</groupId>
       <artifactId>ehcache-core</artifactId>
