@@ -14,59 +14,45 @@
   
   <properties>
     <grails.version>1.3.4</grails.version>
-    <grails-bootstrap.version>${grails.version}</grails-bootstrap.version>
-    <grails-crud.version>${grails.version}</grails-crud.version>
-    <grails-gorm.version>${grails.version}</grails-gorm.version>
-    <grails-test.version>${grails.version}</grails-test.version>
-    
-    <grails-maven-plugin.version>${grails.version}</grails-maven-plugin.version>
-    
-    <jstl.version>1.2</jstl.version>
-    <hibernate-ehcache.version>3.3.1.GA</hibernate-ehcache.version>
-    <ehcache-core.version>1.7.1</ehcache-core.version>
-    <hsqldb.version>1.8.0.10</hsqldb.version>
-    <slf4j-log4j12.version>1.5.8</slf4j-log4j12.version>
-    <aspectjweaver.version>1.6.8</aspectjweaver.version>
-    <aspectjrt.version>1.6.8</aspectjrt.version>
   </properties>
   
   <dependencies>
     <dependency>
       <groupId>org.grails</groupId>
       <artifactId>grails-bootstrap</artifactId>
-      <version>${grails-bootstrap.version}</version>
+      <version>${grails.version}</version>
     </dependency>
     
     <dependency>
       <groupId>org.grails</groupId>
       <artifactId>grails-crud</artifactId>
-      <version>${grails-crud.version}</version>
+      <version>${grails.version}</version>
     </dependency>
     
     <dependency>
       <groupId>org.grails</groupId>
       <artifactId>grails-gorm</artifactId>
-      <version>${grails-gorm.version}</version>
+      <version>${grails.version}</version>
     </dependency>
     
     <dependency>
       <groupId>org.grails</groupId>
       <artifactId>grails-test</artifactId>
-      <version>${grails-test.version}</version>
+      <version>${grails.version}</version>
       <scope>test</scope>
     </dependency>
     
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
-      <version>${jstl.version}</version>
+      <version>1.2</version>
     </dependency>
     
     <!-- Grails defaults to Ehache for the second-level Hibernate cache. -->
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-ehcache</artifactId>
-      <version>${hibernate-ehcache.version}</version>
+      <version>3.3.1.GA</version>
         <exclusions>
           <!-- See http://www.slf4j.org/faq.html#IllegalAccessError -->
           <exclusion>
@@ -85,7 +71,7 @@
     <dependency>
       <groupId>net.sf.ehcache</groupId>
       <artifactId>ehcache-core</artifactId>
-      <version>${ehcache-core.version}</version>
+      <version>1.7.1</version>
       <exclusions>
         <exclusion>
           <groupId>org.slf4j</groupId>
@@ -98,14 +84,14 @@
     <dependency>
       <groupId>hsqldb</groupId>
       <artifactId>hsqldb</artifactId>
-      <version>${hsqldb.version}</version>
+      <version>1.8.0.10</version>
     </dependency>
     
     <!-- Use Log4J for logging. This artifact also pulls in the Log4J JAR. -->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
-      <version>${slf4j-log4j12.version}</version>
+      <version>1.5.8</version>
       <scope>runtime</scope>
     </dependency>
     
@@ -113,13 +99,13 @@
     <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
-      <version>${aspectjweaver.version}</version>
+      <version>1.6.8</version>
     </dependency>
     
     <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjrt</artifactId>
-      <version>${aspectjrt.version}</version>
+      <version>1.6.8</version>
     </dependency>
   </dependencies>
   
@@ -139,7 +125,7 @@
       <plugin>
         <groupId>org.grails</groupId>
         <artifactId>grails-maven-plugin</artifactId>
-        <version>${grails-maven-plugin.version}</version>
+        <version>${grails.version}</version>
         <extensions>true</extensions>
         <executions>
           <execution>
