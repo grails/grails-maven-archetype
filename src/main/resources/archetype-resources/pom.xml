@@ -130,10 +130,6 @@
           <groupId>antlr</groupId>
           <artifactId>antlr</artifactId>
         </exclusion>
-        <exclusion>
-          <groupId>javassist</groupId>
-          <artifactId>javassist</artifactId>
-        </exclusion>
       </exclusions>
     </dependency>
     
@@ -182,18 +178,8 @@
       <version>1.7.1</version>
       <exclusions>
         <exclusion>
-          <artifactId>jms</artifactId>
-        </exclusion>
-        <exclusion>
-          <artifactId>servlet-api</artifactId>
-        </exclusion>
-        <exclusion>
           <groupId>org.slf4j</groupId>
           <artifactId>slf4j-api</artifactId>
-        </exclusion>
-        <!-- We have JCL-over-SLF4J instead. -->
-        <exclusion>
-          <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
