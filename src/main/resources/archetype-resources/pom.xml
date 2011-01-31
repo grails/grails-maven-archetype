@@ -13,7 +13,7 @@
   <url>http://www.myorganization.org</url>
   
   <properties>
-    <grails.version>1.3.6</grails.version>
+    <grails.version>1.3.7.BUILD-SNAPSHOT</grails.version>
   </properties>
   
   <dependencies>
@@ -204,7 +204,13 @@
       <version>1.5.8</version>
       <scope>runtime</scope>
     </dependency>
-    
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.16</version>
+      <scope>runtime</scope>
+    </dependency>
+
     <!-- Needed in the case of AOP usage -->
     <dependency>
       <groupId>org.aspectj</groupId>
@@ -221,7 +227,7 @@
     <dependency>
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
-      <version>1.3</version>
+      <version>1.4</version>
     </dependency>
     
     <dependency>
@@ -233,21 +239,16 @@
     <dependency>
       <groupId>commons-pool</groupId>
       <artifactId>commons-pool</artifactId>
-      <version>1.5.3</version>
+      <version>1.5.5</version>
     </dependency>
     
+    <dependency>
+      <groupId>javax.transaction</groupId>
+      <artifactId>jta</artifactId>
+      <version>1.1</version>
+    </dependency>
+
   </dependencies>
-  
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
-        <version>1.2.16</version>
-        <scope>runtime</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
   
   <repositories>
 	  <!-- Required to get hold of javassist:javassist -->
