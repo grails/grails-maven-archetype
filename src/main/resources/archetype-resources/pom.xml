@@ -130,10 +130,10 @@
           <groupId>org.hibernate</groupId>
           <artifactId>hibernate-annotations</artifactId>
         </exclusion>
-        <exclusion>
-          <groupId>org.hibernate</groupId>
-          <artifactId>hibernate-commons-annotations</artifactId>
-        </exclusion>
+        <!--<exclusion>-->
+          <!--<groupId>org.hibernate</groupId>-->
+          <!--<artifactId>hibernate-commons-annotations</artifactId>-->
+        <!--</exclusion>-->
         <exclusion>
           <groupId>antlr</groupId>
           <artifactId>antlr</artifactId>
@@ -220,12 +220,6 @@
       <dependency>
         <groupId>org.grails</groupId>
         <artifactId>grails-plugin-servlets</artifactId>
-        <version>${grails.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.grails</groupId>
-        <artifactId>grails-plugin-tomcat</artifactId>
         <version>${grails.version}</version>
       </dependency>
 
@@ -358,11 +352,6 @@
     <repository>
       <id>grails</id>
       <url>http://repo.grails.org/grails/core</url>
-    </repository>
-
-    <repository>
-      <id>spring-roo</id>
-      <url>http://spring-roo-repository.springsource.org.s3.amazonaws.com/release</url>
     </repository>
   </repositories>
   
