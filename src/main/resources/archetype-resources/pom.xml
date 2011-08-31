@@ -207,6 +207,12 @@
 
       <dependency>
         <groupId>org.grails</groupId>
+        <artifactId>grails-plugin-mimetypes</artifactId>
+        <version>${grails.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.grails</groupId>
         <artifactId>grails-plugin-scaffolding</artifactId>
         <version>${grails.version}</version>
       </dependency>
