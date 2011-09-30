@@ -17,6 +17,7 @@
   </properties>
   
   <dependencies>
+	<dependency>
       <groupId>org.grails</groupId>
       <artifactId>grails-dependencies</artifactId>
       <version>${grails.version}</version>
