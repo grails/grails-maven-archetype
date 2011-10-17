@@ -15,7 +15,7 @@
   <properties>
     <grails.version>2.0.0.BUILD-SNAPSHOT</grails.version>
   </properties>
-  
+
   <dependencies>
 	<dependency>
       <groupId>org.grails</groupId>
@@ -59,6 +59,21 @@
       </plugin>
     </plugins>
   </build>
+
+  <repositories>
+	<repository>
+	  <id>grails</id>
+	  <name>grails</name>
+      <url>http://repo.grails.org/grails/core</url>
+	</repository>
+	
+	<!-- Required to get hold of javassist:javassist -->
+    <repository>
+      <id>jboss.org</id>
+      <name>jboss.org</name>
+      <url>http://repository.jboss.com/maven2/</url>
+    </repository>
+  </repositories>
   
   <profiles>
     <profile>
