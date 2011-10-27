@@ -66,13 +66,6 @@
 	  <name>grails</name>
       <url>http://repo.grails.org/grails/core</url>
 	</repository>
-	
-	<!-- Required to get hold of javassist:javassist -->
-    <repository>
-      <id>jboss.org</id>
-      <name>jboss.org</name>
-      <url>http://repository.jboss.com/maven2/</url>
-    </repository>
   </repositories>
   
   <profiles>
