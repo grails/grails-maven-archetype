@@ -10,7 +10,7 @@
   <name>Maven archetype for Grails projects</name>
   <description>Maven archetype for Grails projects.</description>
   <url>http://github.com/grails/grails-maven-archetype</url>
-  
+
   <distributionManagement>
     <repository>
       <id>codehaus.org</id>
