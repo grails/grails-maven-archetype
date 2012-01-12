@@ -5,23 +5,16 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.grails</groupId>
   <artifactId>grails-maven-archetype</artifactId>
-  <version>2.0.0</version>
+  <version>2.0.0.BUILD-SNAPSHOT</version>
   
   <name>Maven archetype for Grails projects</name>
   <description>Maven archetype for Grails projects.</description>
   <url>http://github.com/grails/grails-maven-archetype</url>
 
-  <distributionManagement>
-    <repository>
-      <id>codehaus.org</id>
-      <name>Grails Main Repository</name>
-      <url>dav:https://dav.codehaus.org/repository/grails</url>
-    </repository>
+  <parent>
+      <groupId>org.codehaus</groupId>
+      <artifactId>codehaus-parent</artifactId>
+      <version>4</version>
+  </parent>
     
-    <snapshotRepository>
-      <id>codehaus.org</id>
-      <name>Grails Snapshots Repository</name>
-      <url>dav:https://dav.codehaus.org/snapshots.repository/grails</url>
-    </snapshotRepository>
-  </distributionManagement>
 </project>
