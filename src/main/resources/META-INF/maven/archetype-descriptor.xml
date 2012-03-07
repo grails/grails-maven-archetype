@@ -1,0 +1,29 @@
+<archetype-descriptor xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+                      name="grails-plugin-archetype">
+<requiredProperties>
+    <requiredProperty key="archetypeVersion" >
+        <defaultValue>2.0.2.BUILD-SNAPSHOT</defaultValue>
+        ${archetypeVersion}
+    </requiredProperty>
+    <requiredProperty key="binary">
+        <defaultValue>false</defaultValue>
+        ${binary}
+    </requiredProperty>
+    <requiredProperty key="type">
+        <defaultValue>war</defaultValue>
+        ${type}
+    </requiredProperty>
+</requiredProperties>
+
+<fileSets>
+    <fileSet filtered="true" packaged="true" encoding="utf-8" >
+        <directory>src/main/resources/META-INF/maven</directory>
+        <includes>
+            <include>**/*.xml</include>
+        </includes>
+    </fileSet>
+</fileSets>
+
+
+</archetype-descriptor>
