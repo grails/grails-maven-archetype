@@ -5,15 +5,15 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>${groupId}</groupId>
   <artifactId>${artifactId}</artifactId>
-  <packaging>war</packaging>
+  <packaging>#if($type=="plugin")#if($binary=="true")#**#jar#else#**#zip#end#else#**#war#end</packaging>
   <version>${version}</version>
-  
+
   <name>A custom grails project</name>
   <description>A custom grails project</description>
   <url>http://www.myorganization.org</url>
   
   <properties>
-    <grails.version>2.0.1</grails.version>
+    <grails.version>${project.version}</grails.version>
   </properties>
 
   <dependencies>
@@ -75,13 +75,13 @@
         <executions>
           <execution>
             <goals>
-              <goal>init</goal>
+              #if($type=="plugin")<goal>init-plugin</goal>#else<goal>init</goal>#end#**#
               <goal>maven-clean</goal>
-              <goal>validate</goal>
+              #if($type=="plugin")<goal>validate-plugin</goal>#else<goal>validate</goal>#end#**#
               <goal>config-directories</goal>
               <goal>maven-compile</goal>
               <goal>maven-test</goal>
-              <goal>maven-war</goal>
+              #if($type=="plugin")<goal>package-plugin</goal>#else<goal>maven-war</goal>#end#**#
               <goal>maven-functional-test</goal>
             </goals>
           </execution>
