@@ -7,13 +7,13 @@
   <artifactId>${artifactId}</artifactId>
   <packaging>#if($type=="plugin")#if($binary=="true")#**#jar#else#**#zip#end#else#**#war#end</packaging>
   <version>${version}</version>
-  
+
   <name>A custom grails project</name>
   <description>A custom grails project</description>
   <url>http://www.myorganization.org</url>
   
   <properties>
-    <grails.version>$archetypeVersion</grails.version>
+    <grails.version>${project.version}</grails.version>
   </properties>
 
   <dependencies>
@@ -75,13 +75,13 @@
         <executions>
           <execution>
             <goals>
-              #if($type=="plugin") <goal>init-plugin</goal> #else <goal>init</goal> #end\n
+              #if($type=="plugin")<goal>init-plugin</goal>#else<goal>init</goal>#end#**#
               <goal>maven-clean</goal>
-              #if($type=="plugin") <goal>validate-plugin</goal> #else <goal>validate</goal> #end\n
+              #if($type=="plugin")<goal>validate-plugin</goal>#else<goal>validate</goal>#end#**#
               <goal>config-directories</goal>
               <goal>maven-compile</goal>
               <goal>maven-test</goal>
-              #if($type=="plugin") <goal>package-plugin</goal> #else <goal>maven-war</goal> #end\n
+              #if($type=="plugin")<goal>package-plugin</goal>#else<goal>maven-war</goal>#end#**#
               <goal>maven-functional-test</goal>
             </goals>
           </execution>
