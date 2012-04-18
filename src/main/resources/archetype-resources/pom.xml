@@ -13,7 +13,7 @@
   <url>http://www.myorganization.org</url>
   
   <properties>
-    <grails.version>2.0.3</grails.version>
+    <grails.version>2.1.0.BUILD-SNAPSHOT</grails.version>
   </properties>
 
   <dependencies>
@@ -24,6 +24,46 @@
       <version>${grails.version}</version>
 	  <type>pom</type>
     </dependency>
+    
+    <dependency>
+        <groupId>org.grails.plugins</groupId>
+        <artifactId>tomcat</artifactId>
+        <version>2.0.3</version>
+        <type>zip</type>
+        <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.grails.plugins</groupId>
+        <artifactId>hibernate</artifactId>
+        <version>2.0.3</version>
+        <type>zip</type>
+        <scope>compile</scope>
+    </dependency>   
+    
+    <dependency>
+        <groupId>org.grails.plugins</groupId>
+        <artifactId>jquery</artifactId>
+        <version>1.7.1</version>
+        <type>zip</type>
+        <scope>runtime</scope>
+    </dependency> 
+    
+    <dependency>
+        <groupId>org.grails.plugins</groupId>
+        <artifactId>resources</artifactId>
+        <version>1.1.6</version>
+        <type>zip</type>
+        <scope>runtime</scope>
+    </dependency> 
+    
+    <dependency>
+        <groupId>org.grails.plugins</groupId>
+        <artifactId>database-migration</artifactId>
+        <version>1.0</version>
+        <type>zip</type>
+        <scope>runtime</scope>
+    </dependency>           
   </dependencies>
   
   <build>
@@ -105,6 +145,11 @@
 	  <name>grails</name>
       <url>http://repo.grails.org/grails/core</url>
 	</repository>
+	<repository>
+	  <id>grails-plugins</id>
+	  <name>grails-plugins</name>
+      <url>http://repo.grails.org/grails/plugins</url>
+	</repository>	
   </repositories>
   
   <profiles>
