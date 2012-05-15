@@ -13,7 +13,7 @@
   <url>http://www.myorganization.org</url>
   
   <properties>
-    <grails.version>2.1.0.BUILD-SNAPSHOT</grails.version>
+    <grails.version>2.1.0.RC1</grails.version>
   </properties>
 
   <dependencies>
@@ -24,11 +24,18 @@
       <version>${grails.version}</version>
 	  <type>pom</type>
     </dependency>
+        
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-plugin-testing</artifactId>
+        <version>${grails.version}</version>
+        <scope>test</scope>
+    </dependency>    
     
     <dependency>
         <groupId>org.grails.plugins</groupId>
         <artifactId>tomcat</artifactId>
-        <version>2.0.3</version>
+        <version>${grails.version}</version>
         <type>zip</type>
         <scope>provided</scope>
     </dependency>
@@ -36,7 +43,7 @@
     <dependency>
         <groupId>org.grails.plugins</groupId>
         <artifactId>hibernate</artifactId>
-        <version>2.0.3</version>
+        <version>${grails.version}</version>
         <type>zip</type>
         <scope>compile</scope>
     </dependency>   
@@ -60,7 +67,7 @@
     <dependency>
         <groupId>org.grails.plugins</groupId>
         <artifactId>database-migration</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
         <type>zip</type>
         <scope>runtime</scope>
     </dependency>           
