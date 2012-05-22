@@ -13,7 +13,7 @@
   <url>http://www.myorganization.org</url>
   
   <properties>
-    <grails.version>2.1.0.RC1</grails.version>
+    <grails.version>2.1.0.RC2</grails.version>
   </properties>
 
   <dependencies>
@@ -118,6 +118,9 @@
         <groupId>org.grails</groupId>
         <artifactId>grails-maven-plugin</artifactId>
         <version>${grails.version}</version>
+        <configuration>
+            <fork></fork>
+        </configuration>        
         <extensions>true</extensions>
         <executions>
           <execution>
