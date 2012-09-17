@@ -16,9 +16,9 @@ Where grailsVersion is your grails distribution version, in your terminal/consol
 	mvn archetype:generate -DarchetypeGroupId=org.grails -DarchetypeArtifactId=grails-maven-archetype -DarchetypeVersion=${grailsVersion} -DgroupId=example -DartifactId=my-app -DarchetypeRepository=http://repo.grails.org/grails/core/
 	mvn initialize
 
-You can add the following properties to your generate command :
-* -Dtype=plugin to create a grails plugin pom, and -Dbinary=true if you wish your plugin to be packaged as a jar.
-For further usage refer to the Grails documentation on maven : http://grails.org/doc/latest/guide/commandLine.html#4.5 Ant and Maven
+For further usage refer to the Grails documentation on maven : http://grails.org/doc/latest/guide/commandLine.html#antAndMaven
+
+If you want to use a snapshot version of grails-maven-plugin, then you must uncomment the snapshot repositories inside of the generated pom.xml.
 
 License
 ---
