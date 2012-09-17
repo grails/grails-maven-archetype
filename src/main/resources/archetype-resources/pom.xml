@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>${groupId}</groupId>
   <artifactId>${artifactId}</artifactId>
-  <packaging>war</packaging>
+  <packaging>grails-app</packaging>
   <version>${version}</version>
   
   <name>A custom grails project</name>
@@ -122,28 +122,14 @@
             <fork></fork>
         </configuration>        
         <extensions>true</extensions>
-        <executions>
-          <execution>
-            <goals>
-              <goal>init</goal>
-              <goal>maven-clean</goal>
-              <goal>validate</goal>
-              <goal>config-directories</goal>
-              <goal>maven-compile</goal>
-              <goal>maven-test</goal>
-              <goal>maven-war</goal>
-              <goal>maven-functional-test</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
       
       <plugin>
 		<groupId>org.apache.maven.plugins</groupId>	
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.5</source>
-          <target>1.5</target>
+          <source>1.6</source>
+          <target>1.6</target>
         </configuration>
       </plugin>
     </plugins>
@@ -159,8 +145,33 @@
 	  <id>grails-plugins</id>
 	  <name>grails-plugins</name>
       <url>http://repo.grails.org/grails/plugins</url>
-	</repository>	
+	</repository>
+	<!-- uncomment the following snapshot repository if you want to use snapshot versions of the grails-maven-plugin -->
+	<!--
+	<repository>
+	  <id>grails-plugins-snapshots</id>
+	  <name>grails-maven-plugins</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+	</repository>
+	-->
   </repositories>
+
+<!-- uncomment the following snapshot repository if you want to use snapshot versions of the grails-maven-plugin -->
+<!--
+<pluginRepositories>
+	<pluginRepository>
+	  <id>grails-maven-plugins</id>
+	  <name>grails-maven-plugins</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+	</pluginRepository>
+</pluginRepositories>
+-->
   
   <profiles>
     <profile>
