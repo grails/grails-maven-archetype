@@ -13,7 +13,7 @@
   <url>http://www.myorganization.org</url>
   
   <properties>
-    <grails.version>2.2.0.BUILD-SNAPSHOT</grails.version>
+    <grails.version>2.2.0.RC1</grails.version>
   </properties>
 
   <dependencies>
