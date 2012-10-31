@@ -13,7 +13,7 @@
   <url>http://www.myorganization.org</url>
   
   <properties>
-    <grails.version>2.2.0.RC1</grails.version>
+    <grails.version>2.2.0.RC2</grails.version>
   </properties>
 
   <dependencies>
@@ -67,10 +67,18 @@
     <dependency>
         <groupId>org.grails.plugins</groupId>
         <artifactId>database-migration</artifactId>
-        <version>1.1</version>
+        <version>1.2</version>
         <type>zip</type>
         <scope>runtime</scope>
-    </dependency>           
+    </dependency>   
+
+    <dependency>
+        <groupId>org.grails.plugins</groupId>
+        <artifactId>cache</artifactId>
+        <version>1.0.1</version>
+        <type>zip</type>
+        <scope>runtime</scope>
+    </dependency>                
   </dependencies>
   
   <build>
