@@ -13,7 +13,7 @@
   <url>http://www.myorganization.org</url>
   
   <properties>
-    <grails.version>2.2.2</grails.version>
+    <grails.version>2.2.3</grails.version>
   </properties>
 
   <dependencies>
@@ -67,7 +67,7 @@
     <dependency>
         <groupId>org.grails.plugins</groupId>
         <artifactId>resources</artifactId>
-        <version>1.1.6</version>
+        <version>1.2</version>
         <type>zip</type>
         <scope>runtime</scope>
     </dependency> 
