@@ -13,18 +13,71 @@
   <url>http://www.myorganization.org</url>
   
   <properties>
-    <grails.version>2.2.3</grails.version>
+    <grails.version>2.3.0.BUILD-SNAPSHOT</grails.version>
   </properties>
 
   <dependencies>
 
-	<dependency>
-      <groupId>org.grails</groupId>
-      <artifactId>grails-dependencies</artifactId>
-      <version>${grails.version}</version>
-	  <type>pom</type>
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-plugin-async</artifactId>
+        <version>${grails.version}</version>
     </dependency>
-        
+
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-plugin-rest</artifactId>
+        <version>${grails.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-plugin-services</artifactId>
+        <version>${grails.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-plugin-i18n</artifactId>
+        <version>${grails.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-plugin-databinding</artifactId>
+        <version>${grails.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-plugin-filters</artifactId>
+        <version>${grails.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-plugin-gsp</artifactId>
+        <version>${grails.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-plugin-log4j</artifactId>
+        <version>${grails.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-plugin-servlets</artifactId>
+        <version>${grails.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-plugin-url-mappings</artifactId>
+        <version>${grails.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-resources</artifactId>
+        <version>${grails.version}</version>
+        <scope>runtime</scope>
+    </dependency>
+
     <dependency>
         <groupId>org.grails</groupId>
         <artifactId>grails-plugin-testing</artifactId>
