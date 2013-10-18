@@ -13,7 +13,7 @@
   <url>http://www.myorganization.org</url>
   
   <properties>
-    <grails.version>2.3.0</grails.version>
+    <grails.version>2.3.1</grails.version>
   </properties>
 
   <dependencies>
@@ -42,7 +42,7 @@
     <dependency>
         <groupId>org.grails.plugins</groupId>
         <artifactId>hibernate</artifactId>
-        <version>3.6.10.1</version>
+        <version>3.6.10.2</version>
         <type>zip</type>
         <scope>compile</scope>
     </dependency>   
@@ -50,7 +50,7 @@
     <dependency>
         <groupId>org.grails.plugins</groupId>
         <artifactId>scaffolding</artifactId>
-        <version>2.0.0</version>
+        <version>2.0.1</version>
         <type>zip</type>
         <scope>compile</scope>
     </dependency>   
@@ -62,14 +62,7 @@
         <type>zip</type>
         <scope>runtime</scope>
     </dependency> 
-    
-    <dependency>
-        <groupId>org.grails.plugins</groupId>
-        <artifactId>cache</artifactId>
-        <version>1.0.1</version>
-        <type>zip</type>
-        <scope>runtime</scope>
-    </dependency>     
+      
     
     <dependency>
         <groupId>org.grails.plugins</groupId>
