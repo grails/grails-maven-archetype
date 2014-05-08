@@ -13,7 +13,7 @@
   <url>http://www.myorganization.org</url>
   
   <properties>
-    <grails.version>2.3.8</grails.version>
+    <grails.version>2.4.0.RC1</grails.version>
   </properties>
 
   <dependencies>
@@ -32,6 +32,20 @@
     </dependency>    
     
     <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+    </dependency>        
+
+    <dependency>
+        <groupId>org.spockframework</groupId>
+        <artifactId>spock-core</artifactId>
+        <version>0.7-groovy-2.0</version>
+        <scope>test</scope>        
+    </dependency>    
+
+    <dependency>
         <groupId>org.grails.plugins</groupId>
         <artifactId>tomcat</artifactId>
         <version>7.0.52.1</version>
@@ -41,8 +55,8 @@
     
     <dependency>
         <groupId>org.grails.plugins</groupId>
-        <artifactId>hibernate</artifactId>
-        <version>3.6.10.13</version>
+        <artifactId>hibernate4</artifactId>
+        <version>4.3.5.2</version>
         <type>zip</type>
         <scope>compile</scope>
     </dependency>   
@@ -50,7 +64,7 @@
     <dependency>
         <groupId>org.grails.plugins</groupId>
         <artifactId>scaffolding</artifactId>
-        <version>2.0.1</version>
+        <version>2.1.0</version>
         <type>zip</type>
         <scope>compile</scope>
     </dependency>   
@@ -58,7 +72,7 @@
     <dependency>
         <groupId>org.grails.plugins</groupId>
         <artifactId>jquery</artifactId>
-        <version>1.11.0.1</version>
+        <version>1.11.1</version>
         <type>zip</type>
         <scope>runtime</scope>
     </dependency> 
@@ -66,11 +80,19 @@
     
     <dependency>
         <groupId>org.grails.plugins</groupId>
-        <artifactId>resources</artifactId>
-        <version>1.2.7</version>
+        <artifactId>asset-pipeline</artifactId>
+        <version>1.8.7</version>
         <type>zip</type>
         <scope>runtime</scope>
     </dependency> 
+
+    <dependency>
+        <groupId>org.grails.plugins</groupId>
+        <artifactId>webxml</artifactId>
+        <version>1.4.1</version>
+        <type>zip</type>
+        <scope>runtime</scope>
+    </dependency>     
     
     <dependency>
         <groupId>org.grails.plugins</groupId>
