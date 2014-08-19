@@ -22,6 +22,7 @@
         <groupId>org.grails</groupId>
         <artifactId>grails-dependencies</artifactId>
         <version>${grails.version}</version>
+        <type>pom</type>
     </dependency>    
 
     <dependency>
